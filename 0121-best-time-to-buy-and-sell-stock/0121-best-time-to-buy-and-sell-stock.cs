@@ -7,9 +7,8 @@ public class Solution {
             if(prices[i] < min){
                 min = prices[i];
                 Console.Write(min);
-            }else if(prices[i] - min > max){
-                max = prices[i] - min;
             }
+            max = Math.Max(max, prices[i]-min);
         }
         return max;
     }
