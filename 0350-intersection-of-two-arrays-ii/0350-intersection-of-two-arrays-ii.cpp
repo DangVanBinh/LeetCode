@@ -7,7 +7,6 @@ public:
             mp[a]++;
         }
         for(auto a : nums2){
-            //cout << mp.end() << " ";
             if(mp[a]>0){
                 ans.push_back(a);
                 mp[a]--;
